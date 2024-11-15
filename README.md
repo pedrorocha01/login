@@ -9,6 +9,7 @@ CREATE DATABASE dblogin;
 
 use dblogin;
 
+´´
 CREATE TABLE users(
 	id INTEGER PRIMARY KEY AUTO_INCREMENT,
     username VARCHAR (100) NOT NULL,
@@ -17,7 +18,7 @@ CREATE TABLE users(
     pass INTEGER NOT NULL
 
 );
-
+´´
 --Caso aconteça problema de conexão com o banco, rodar no Workbench:
 
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '';
@@ -26,6 +27,7 @@ flush privileges;
 
 <h2> Comandos</h2>
 
+´´
 --Dependências:
 npm init
 npm install nodemon -g 
@@ -37,3 +39,4 @@ npm install ejs -save
 
 --Para subir o servidor:
 node app.js
+´´
