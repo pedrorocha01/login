@@ -3,6 +3,7 @@ Aplicação de login desenvolvida com Node.js em conjunto com o banco de dados M
 
 <h2> Banco de Dados </h2>
 
+```
 --Criar um banco de dados no MySQL.
 
 CREATE DATABASE dblogin;
@@ -24,10 +25,11 @@ CREATE TABLE users(
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '';
 
 flush privileges;
+```
 
 <h2> Comandos</h2>
 
-´´
+```
 --Dependências:
 npm init
 npm install nodemon -g 
@@ -39,4 +41,4 @@ npm install ejs -save
 
 --Para subir o servidor:
 node app.js
-´´
+```
