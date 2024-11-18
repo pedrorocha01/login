@@ -4,11 +4,9 @@ Aplicação de login desenvolvida com Node.js em conjunto com o banco de dados M
 <h2> Banco de Dados </h2>
 
 ```
---Criar um banco de dados no MySQL.
+--Criar tabela no banco de dados do MySQL.
 
-CREATE DATABASE dblogin;
-
-use dblogin;
+use db2020108000;
 
 CREATE TABLE users(
 	id INTEGER PRIMARY KEY AUTO_INCREMENT,
@@ -36,6 +34,7 @@ flush privileges;
 ```
 --Dependências:
 npm init
+(confirme com enter até terminar)
 npm install nodemon
 npm install -- save express
 npm install express-session
