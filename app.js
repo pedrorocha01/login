@@ -33,10 +33,10 @@ app.use(bodyParser.json());
 //conexão com banco mysql
 function conectiondb(){
     var con = mysql.createConnection({
-        host: 'localhost', // O host do banco. Ex: localhost
-        user: 'root', // Um usuário do banco. Ex: user 
-        password: '', // A senha do usuário. Ex: user123
-        database: 'dblogin' // A base de dados a qual a aplicação irá se conectar
+        host: '', // O host do banco. Ex: turing, nome da conexão do banco
+        user: '', // Um usuário do banco. user2020108000 
+        password: '', // A senha do usuário. Ex: 2020108000
+        database: '' // A base de dados a qual a aplicação irá se conectar. Ex: db2020108000
     });
 
     //verifica conexao com o banco
@@ -189,4 +189,4 @@ app.post('/delete', function (req, res){
 });
 
 //executa servidor
-app.listen(80, () => console.log(`Servidor ok`));
+app.listen(8081, () => console.log(`Servidor ok`));
